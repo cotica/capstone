@@ -35,3 +35,4 @@ Scrape and / or [report tools](https://www.amazon.com/gp/b2b/reports/?ie=UTF8&do
 ## Report and presentation links
 
 [`Slides`](https://docs.google.com/presentation/d/16-24og3wl4MC0OUlwuakeZuyuqF_WCxy1lFTB3g3K-8/edit?usp=sharing)
+[`EDA report`](./code/Amazon-order-history-EDA.ipynb)
