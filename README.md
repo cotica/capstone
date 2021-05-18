@@ -1,4 +1,4 @@
-# capstone
+# Amazon recommender
 
 - - - 
 
