@@ -14,7 +14,7 @@ Amazon purchase history.
 
 ## Data acquisition strategy
 
-Scrape and / or report tools from Amazon.
+Scrape and / or [report tools](https://www.amazon.com/gp/b2b/reports/?ie=UTF8&download-report.x=1&isInternal=0&js=1&reportId=A2E5G9EX1PGVO8) from Amazon.
 
 - - -
 ## Metrics and evaluation
