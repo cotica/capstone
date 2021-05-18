@@ -4,12 +4,14 @@
 
 ## Problem space and question
 
-I am setting out on a bold personal mission: using my own 15-year Amazon purchase history, can a recommender I build beat the recommendations from Amazon itself?
+I am setting out on a bold personal mission: using my own 12-year Amazon purchase history, can a recommender I build beat the recommendations from Amazon itself?
 
 - - -
 ## Data sources
 
 Amazon purchase history.
+
+![](http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG)
 
 
 ## Data acquisition strategy
