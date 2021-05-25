@@ -21,11 +21,16 @@ Scrape and / or [report tools](https://www.amazon.com/gp/b2b/reports) from Amazo
 - - -
 ## Metrics and evaluation
 
+We will use a product catalog to generate recommendations, and then compare against ones recommended by Amazon.
+We will then see if I would actually accept those recommendations.
+
 
 ## Analysis & key findings
 
 
 ## ML
+
+For the test set, we will use a product catalog API.
 
 
 ## Conclusions and recommendations
