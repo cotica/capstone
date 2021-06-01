@@ -21,9 +21,9 @@ Download data using [report tools](https://www.amazon.com/gp/b2b/reports) from A
 - - -
 ## Metrics and evaluation
 
-Using the Amazon [product API](https://pypi.org/project/python-amazon-product-api/0.2.5/), we will generate some product recommendations for my test set, and then compare against ones recommended by Amazon.
+Using the Amazon [product API](https://pypi.org/project/python-amazon-product-api/0.2.5/), we will generate some product recommendations for my test set, and then compare against ones recommended by Amazon itself (on my homepage). We will iterate through this 25 times.
 
-We will then see if I would actually accept those recommendations.
+We will then see if I would actually accept those recommendations both from a) Amazon and b) from my Product Recommender.
 
 
 ## Analysis & key findings
@@ -36,9 +36,13 @@ For the test set, we will use a product catalog API.
 
 ## Conclusions and recommendations
 
+### Challenges
+
+### Assumptions made
 
 - - -
 ## Report and presentation links
 
 [`Slides`](https://docs.google.com/presentation/d/16-24og3wl4MC0OUlwuakeZuyuqF_WCxy1lFTB3g3K-8/edit?usp=sharing)
+
 [`EDA report`](./code/Amazon-order-history-EDA.ipynb)
