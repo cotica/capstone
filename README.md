@@ -25,6 +25,7 @@ Using the Amazon [product API](https://pypi.org/project/python-amazon-product-ap
 
 We will then see if I would actually accept those recommendations both from a) Amazon and b) from my Product Recommender.
 
+## Methodology
 
 ## Analysis & key findings
 
@@ -33,12 +34,20 @@ We will then see if I would actually accept those recommendations both from a) A
 
 For the test set, we will use a product catalog API.
 
+- - - 
 
 ## Conclusions and recommendations
 
 ### Challenges
 
+The first challenge was very much gaining access to Amazon's product catalog. To do this, I needed to get an Affiliate Marketer (Amazon Associate) seller account, which in itself required a website to be up and running (here's [mine](https://productincubator.co/)) where I could place and monetize Amazon's product links, all in order to get an Amazon API secret and key to use to obtain their coveted product data.
+
 ### Assumptions made
+
+### Questions along the way
+
+1. What is a good predictive test / training set?
+2. How many iterations do we want to run through?
 
 - - -
 ## Report and presentation links
