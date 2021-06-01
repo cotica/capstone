@@ -9,19 +9,20 @@ I am setting out on a bold personal mission: using my own 12-year Amazon purchas
 - - -
 ## Data sources
 
-Amazon purchase history.
+For my training data, I am going to use my own Amazon purchase history.
 
 ![](http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG)
 
 
 ## Data acquisition strategy
 
-Scrape and / or [report tools](https://www.amazon.com/gp/b2b/reports) from Amazon.
+Download data using [report tools](https://www.amazon.com/gp/b2b/reports) from Amazon.
 
 - - -
 ## Metrics and evaluation
 
-We will use a product catalog to generate recommendations, and then compare against ones recommended by Amazon.
+Using the Amazon [product API](https://pypi.org/project/python-amazon-product-api/0.2.5/), we will generate some product recommendations for my test set, and then compare against ones recommended by Amazon.
+
 We will then see if I would actually accept those recommendations.
 
 
