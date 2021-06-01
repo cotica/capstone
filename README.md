@@ -55,3 +55,10 @@ The first challenge was very much gaining access to Amazon's product catalog. To
 [`Slides`](https://docs.google.com/presentation/d/16-24og3wl4MC0OUlwuakeZuyuqF_WCxy1lFTB3g3K-8/edit?usp=sharing)
 
 [`EDA report`](./code/Amazon-order-history-EDA.ipynb)
+
+- - -
+## References and contributors
+
+The General Assembly instruction team for Data Science Immersive cohort DSIR-322 greatly contributed in consultation for this project. It includes Gwen Rathgeber, Charlie Rice, Heather Robbins and Devin Fay.
+
+In addition, several family members assisted with helping obtain the required ad purchases to satisfy Amazon's own requirements. These family members include Margarita Stepanova and Nellie Troisi.
