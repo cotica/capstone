@@ -46,7 +46,7 @@ The first challenge was very much gaining access to Amazon's product catalog. To
 
 ### Questions along the way
 
-1. What is a good predictive test / training set?
+1. What is a good predictive test / training set size?
 2. How many iterations do we want to run through?
 
 - - -
