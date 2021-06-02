@@ -1,4 +1,4 @@
-# Amazon recommender
+# Product recommender (Me vs Amazon)
 
 - - - 
 
@@ -9,7 +9,7 @@ I am setting out on a bold personal mission: using my own 12-year Amazon purchas
 - - -
 ## Data sources
 
-For my training data, I am going to use my own Amazon purchase history.
+For my training data, I am going to use my own Amazon purchase history along with any donated / sourced purchase history I can get my hands on in this very limited timeframe and mindful of PII.
 
 ![](http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG)
 
@@ -17,29 +17,34 @@ For my training data, I am going to use my own Amazon purchase history.
 ## Data acquisition strategy
 
 1. For training:
-** Download data using [report tools](https://www.amazon.com/gp/b2b/reports) from Amazon.
-** Potentially request history from classmates
+
+** Download purchase history data using [Amazon report tools](https://www.amazon.com/gp/b2b/reports) from Amazon.
+** Potentially request history from classmates and / or family
 
 
 2. For test:
 
-**Obtain generic product catalog data. Possible [source](https://data.world/promptcloud/amazon-product-listing-q2-2020/workspace/project-summary?agentid=promptcloud&datasetid=amazon-product-listing-q2-2020)
+** Obtain generic product catalog data. Possible [source](https://data.world/promptcloud/amazon-product-listing-q2-2020/workspace/project-summary?agentid=promptcloud&datasetid=amazon-product-listing-q2-2020)
 
 - - -
 ## Metrics and evaluation
 
 Using the Amazon [product API](https://pypi.org/project/python-amazon-product-api/0.2.5/), we will generate some product recommendations for my test set, and then compare against ones recommended by Amazon itself (on my homepage). We will iterate through this 25 times.
 
-We will then see if I and / or my classmates would actually accept those recommendations both from:
+We will then see if I and / or my classmates or family members would actually accept those recommendations both from:
 
 a) Amazon
 b) from my Product Recommender
 
+If they accept, then we rank our recommendations as good, if they do not, then we rank recommendations as poor.
 
+- - - 
 ## Methodology
 
 
+
 ## Analysis & key findings
+
 
 
 ## ML
