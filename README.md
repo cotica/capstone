@@ -30,7 +30,7 @@ For my training data, I am going to use my own Amazon purchase history along wit
 - - -
 ## Metrics and evaluation
 
-Using the Amazon [product API](https://pypi.org/project/python-amazon-product-api/0.2.5/), we will generate some product recommendations for my test set, and then compare against ones recommended by Amazon itself (on my homepage). We will iterate through this 25 times.
+Using a sample from the Amazon product catalog, we will generate some product recommendations for my test set, and then compare against ones recommended by Amazon itself (on my homepage). We will iterate through this 25 times.
 
 We will then see if I and / or my classmates or family members would actually accept those recommendations both from:
 
@@ -46,7 +46,24 @@ We are shooting for more than 50% accuracy. 50% accuracy is basically a shot in 
 ## Methodology
 
 
+### Challenges
 
+The first challenge was very much gaining access to Amazon's product catalog. To do this, I needed to get an Affiliate Marketer (Amazon Associate) seller account, which in itself required a website to be up and running (here's [mine](https://productincubator.co/)) where I could place and monetize Amazon's product links, all in order to get an Amazon API secret and key to use to obtain their coveted product data. This was scratched in favor of 
+
+
+### Assumptions made
+
+
+### Questions along the way
+
+1. What is a good predictive test / training set size?
+2. How to we tackle the inherent bias from sampling just a single user's (my!) preferences?
+3. How many iterations do we want to run through?
+4. How do we evaluate the recommendations? What baseline do we use to make the determination?
+5. Merging strategy
+
+
+- - -
 ## Analysis & key findings
 
 
@@ -59,17 +76,6 @@ For the test set, we will use a product catalog API.
 
 ## Conclusions and recommendations
 
-### Challenges
-
-The first challenge was very much gaining access to Amazon's product catalog. To do this, I needed to get an Affiliate Marketer (Amazon Associate) seller account, which in itself required a website to be up and running (here's [mine](https://productincubator.co/)) where I could place and monetize Amazon's product links, all in order to get an Amazon API secret and key to use to obtain their coveted product data.
-
-### Assumptions made
-
-### Questions along the way
-
-1. What is a good predictive test / training set size?
-2. How many iterations do we want to run through?
-3. How do we evaluate the recommendations? What baseline do we use to make the determination?
 
 - - -
 ## Report and presentation links
