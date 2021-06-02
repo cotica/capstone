@@ -40,6 +40,8 @@ b) from my Product Recommender
 
 If they accept, then we rank our recommendations as good, if they do not, then we rank recommendations as poor.
 
+We are shooting for more than 50% accuracy. 50% accuracy is basically a shot in the dark (coin flip), less than that means that we should leave this job for Amazon and probably get out of the recommendation business.
+
 - - - 
 ## Methodology
 
@@ -67,6 +69,7 @@ The first challenge was very much gaining access to Amazon's product catalog. To
 
 1. What is a good predictive test / training set size?
 2. How many iterations do we want to run through?
+3. How do we evaluate the recommendations? What baseline do we use to make the determination?
 
 - - -
 ## Report and presentation links
