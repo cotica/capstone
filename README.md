@@ -35,6 +35,7 @@ Using the Amazon [product API](https://pypi.org/project/python-amazon-product-ap
 We will then see if I and / or my classmates or family members would actually accept those recommendations both from:
 
 a) Amazon
+
 b) from my Product Recommender
 
 If they accept, then we rank our recommendations as good, if they do not, then we rank recommendations as poor.
