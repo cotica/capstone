@@ -78,4 +78,4 @@ The first challenge was very much gaining access to Amazon's product catalog. To
 
 The General Assembly instruction team for Data Science Immersive cohort DSIR-322 greatly contributed in consultation for this project. It includes Gwen Rathgeber, Charlie Rice, Heather Robbins and Devin Fay.
 
-In addition, several family members assisted with helping obtain the required ad purchases to satisfy Amazon's own requirements. These family members include Margarita Stepanova and Nellie Troisi.
+In addition, several family members assisted with helping obtain the required ad purchases to satisfy Amazon's own requirements. These family members include Rick and Nellie Troisi.
