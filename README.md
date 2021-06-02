@@ -16,16 +16,28 @@ For my training data, I am going to use my own Amazon purchase history.
 
 ## Data acquisition strategy
 
-Download data using [report tools](https://www.amazon.com/gp/b2b/reports) from Amazon.
+1. For training:
+** Download data using [report tools](https://www.amazon.com/gp/b2b/reports) from Amazon.
+** Potentially request history from classmates
+
+
+2. For test:
+
+**Obtain generic product catalog data. Possible [source](https://data.world/promptcloud/amazon-product-listing-q2-2020/workspace/project-summary?agentid=promptcloud&datasetid=amazon-product-listing-q2-2020)
 
 - - -
 ## Metrics and evaluation
 
 Using the Amazon [product API](https://pypi.org/project/python-amazon-product-api/0.2.5/), we will generate some product recommendations for my test set, and then compare against ones recommended by Amazon itself (on my homepage). We will iterate through this 25 times.
 
-We will then see if I would actually accept those recommendations both from a) Amazon and b) from my Product Recommender.
+We will then see if I and / or my classmates would actually accept those recommendations both from:
+
+a) Amazon
+b) from my Product Recommender
+
 
 ## Methodology
+
 
 ## Analysis & key findings
 
