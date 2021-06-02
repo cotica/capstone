@@ -77,6 +77,10 @@ For the test set, we will use a product catalog API.
 ## Conclusions and recommendations
 
 
+WARNING! WARNING! This is not production ready!
+
+In the future, we would want to collect samples from other consumers and get some good variety (at least 30 samples x say 100-500 products each!), for this recommender to be verified more legitimated.
+
 - - -
 ## Report and presentation links
 
