@@ -19,6 +19,7 @@ For my training data, I am going to use my own Amazon purchase history along wit
 1. For training:
 
 ** Download purchase history data using [Amazon report tools](https://www.amazon.com/gp/b2b/reports) from Amazon.
+
 ** Potentially request history from classmates and / or family
 
 
