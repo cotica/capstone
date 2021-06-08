@@ -15,6 +15,7 @@ Some questions to be studied:
 * Is there a relationship between the number of sellers and the star rating?
 * Is there a relationship between the star rating and the number of reviews?
 * Is there any relationship between the product description and the star rating?
+* Is there a relatioship between product price and rating?
 * Is there a relationship between a product being sold as new vs. used and its rating?
 * Does sentiment correspond to a product's star rating?
 
