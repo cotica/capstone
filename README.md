@@ -1,66 +1,30 @@
-# Product recommender (Me vs Amazon)
+# Amazon product popularity predictor
 
 - - - 
 
-## Problem space and question
+## Problem space and questions
 
-I am setting out on a bold personal mission: using my own 12-year Amazon purchase history, can a recommender I build beat the recommendations from Amazon itself?
+We use a sample from the Amazon product catalog to understand the relationship between various factors and their impact on product ratings.
+
+Generally, we seek to understand whether there is a correlation between product quality, as assessed by ratings and reviews, and the product popularity.
+
+Some questions to be studied:
+
+
+* Is there a correlation between the number of reviews and the number of customer questions?
+* Is there a relationship between the number of sellers and the star rating?
+* Is there a relationship between the star rating and the number of reviews?
+* Is there any relationship between the product description and the star rating?
+* Is there a relationship between a product being sold as new vs. used and its rating?
+* Does sentiment correspond to a product's star rating?
 
 - - -
-## Data sources
-
-For my training data, I am going to use my own Amazon purchase history along with any donated / sourced purchase history I can get my hands on in this very limited timeframe and mindful of PII.
+## Data sources and  acquisition
 
 ![](http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG)
 
 
-## Data acquisition strategy
-
-1. For training:
-
-** Download purchase history data using [Amazon report tools](https://www.amazon.com/gp/b2b/reports) from Amazon.
-
-** Potentially request history from classmates and / or family
-
-
-2. For test:
-
-** Obtain generic product catalog data. Possible [source](https://data.world/promptcloud/amazon-product-listing-q2-2020/workspace/project-summary?agentid=promptcloud&datasetid=amazon-product-listing-q2-2020)
-
-- - -
-## Metrics and evaluation
-
-Using a sample from the Amazon product catalog, we will generate some product recommendations for my test set, and then compare against ones recommended by Amazon itself (on my homepage). We will iterate through this 25 times.
-
-We will then see if I and / or my classmates or family members would actually accept those recommendations both from:
-
-a) Amazon
-
-b) from my Product Recommender
-
-If they accept, then we rank our recommendations as good, if they do not, then we rank recommendations as poor.
-
-We are shooting for more than 50% accuracy. 50% accuracy is basically a shot in the dark (coin flip), less than that means that we should leave this job for Amazon and probably get out of the recommendation business.
-
-- - - 
-## Methodology
-
-
-### Challenges
-
-The first challenge was very much gaining access to Amazon's product catalog. To do this, I needed to get an Affiliate Marketer (Amazon Associate) seller account, which in itself required a website to be up and running (here's [mine](https://productincubator.co/)) where I could place and monetize Amazon's product links, all in order to get an Amazon API secret and key to use to obtain their coveted product data. This was scratched in favor of 
-
-
-### Assumptions made
-
-
-### Questions along the way
-
-1. What is a good predictive test / training set size?
-2. How to we tackle the inherent bias from sampling just a single user's (my!) preferences?
-3. How many iterations do we want to run through?
-4. How do we evaluate the recommendations? What baseline do we use to make the determination?
-5. Merging strategy
+* Generic product catalog data obtained from [data.world](https://data.world/promptcloud/fashion-products-on-amazon-com).
 
 
 - - -
@@ -68,18 +32,33 @@ The first challenge was very much gaining access to Amazon's product catalog. To
 
 
 
+- - -
 ## ML
 
-For the test set, we will use a product catalog API.
+### Tooling
+
+The `CountVectorizer` library is used to vectorize text.
+
+
+### Model evaluation
+
+
 
 - - - 
 
 ## Conclusions and recommendations
 
+### Caveats, assumptions made and questions along the way
 
-WARNING! WARNING! This is not production ready!
+Because the sample was obtained from someone else's scaping results, we are a bit removed from the original source and cannot vouch for 100% accuracy of the data or the extraction methods.
 
-In the future, we would want to collect samples from other consumers and get some good variety (at least 30 samples x say 100-500 products each!), for this recommender to be validated more legitimately.
+One piece missing, for example, is the dates of the purchases (or direct purchase data) or of the reviews themselves; as a result, we are relying on extrapolating popularity from the number of reviews, without any idea of the freshness or recency of the data.
+
+In addition, the original prices were in British pounds, so the data may be biased or skewed to a particular region.
+
+Further, because no purchase data or product listing age information are available, rather than deducing sales, we can really only look at identifying general product popularity. We must be careful to account for nuances, such as the freshness of a product listing. We do, however, assume a near direct proportion between the number of reviews and a product's purchases; that is to say, each review _must_ come from a purchase (so there are at least that many) because of Amazon's product verification process (i.e., Amazon only allows customer reviews from validated purchases). Therefore, even our few outliers with 1,000+ ratings are presumed to be legitimate purchases.
+
+Lastly, a word of caution must be noted on ratings overall. While the subject of scrutiny of papers beyond our scope, ratings are inherently subjective due to their design, and some customers may be confused about how to use them (e.g., think that 1 star is the best rating). We must ignore these kinds of nuances, without the ability here to do qualitative research to question the validity of each rating, but one way to get at this is to ensure, for example, that the sentiment -- e.g. a positive review -- actually corresponds with the rating, e.g. a positive rating (4 stars or better) in the case of a positive review, which we attempt to do with the sentiment analysis tools at our disposal.
 
 - - -
 ## Report and presentation links
@@ -92,5 +71,3 @@ In the future, we would want to collect samples from other consumers and get som
 ## References and contributors
 
 The General Assembly instruction team for Data Science Immersive cohort DSIR-322 greatly contributed in consultation for this project. It includes Gwen Rathgeber, Charlie Rice, Heather Robbins and Devin Fay.
-
-In addition, several family members assisted with helping obtain the required ad purchases to satisfy Amazon's own requirements. These family members include Rick and Nellie Troisi.
