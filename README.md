@@ -17,6 +17,7 @@ Some questions to be studied:
 * Is there any relationship between the product description and the star rating?
 * Is there a relatioship between product price and rating?
 * Is there a relationship between a product being sold as new vs. used and its rating?
+* Do certain categories rank higher than others?
 * Does sentiment correspond to a product's star rating?
 
 - - -
