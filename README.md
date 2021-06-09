@@ -32,7 +32,9 @@ Some questions to be studied:
 - - -
 ## Analysis & key findings
 
+![](./assets/price_concentrate.jpg)
 
+![](./assets/concentration_reviews.jpg)
 
 - - -
 ## ML
