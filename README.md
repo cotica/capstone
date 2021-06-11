@@ -63,13 +63,16 @@ From the basic descriptive stats, we can conclude the following:
 
 ![](./assets/Corr.jpg)
 
+* We _finally_ confirm a pretty good linear relationship pattern between reviews and ratings -- our holy grail!
+
+![](./assets/sentiment.jpg)
 
 - - -
 ## ML
 
 ### Tooling
 
-The `CountVectorizer` library is used to vectorize text.
+The `CountVectorizer` library is used to vectorize text and `Vader` for sentiment analysis.
 
 
 ### Model evaluation
