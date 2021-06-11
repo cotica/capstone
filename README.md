@@ -97,7 +97,9 @@ Lastly, a word of caution must be noted on ratings overall. While the subject of
 
 [`Slides`](https://docs.google.com/presentation/d/16-24og3wl4MC0OUlwuakeZuyuqF_WCxy1lFTB3g3K-8/edit?usp=sharing)
 
-[`EDA report`](./code/Amazon-order-history-EDA.ipynb)
+[`Data import, cleaning + EDA report`](./code/Amazon-product-catalog-cleaning-EDA.ipynb)
+
+[`NLP + modeling report`](./code/Amazon-product-catalog-NLP-modeling.ipynb)
 
 - - -
 ## References and contributors
