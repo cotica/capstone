@@ -38,6 +38,7 @@ From the basic descriptive stats, we can conclude the following:
 * Most products have about 9 product reviews and 1-2 customer questions
 * The average product rating is a mere 2 stars
 * In the data, there are 7309 product listings with new items sold and 161 used
+* There were 256 subcategories and 2646 manufacturers represented
 
 
 * Price concentration in Amazon product sample
