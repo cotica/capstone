@@ -51,7 +51,7 @@ From the basic descriptive stats, we can conclude the following:
 * Distribution of product reviews
 ![](./assets/concentration_reviews.jpg)
 
-* The holy grain: can we find patterns indicating any relationship with ratings?
+* The holy grail: can we find patterns indicating any relationship with ratings?
 
 ![](./assets/pairplot.jpg)
 
