@@ -59,6 +59,11 @@ From the basic descriptive stats, we can conclude the following:
 
 ![](./assets/pairplot.jpg)
 
+* The correlations aren't very strong though, in the end:
+
+![](./assets/Corr.jpg)
+
+
 - - -
 ## ML
 
