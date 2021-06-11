@@ -51,6 +51,10 @@ From the basic descriptive stats, we can conclude the following:
 * Distribution of product reviews
 ![](./assets/concentration_reviews.jpg)
 
+* Top rated product categories
+
+![](./assets/top_rated_cats.png)
+
 * The holy grail: can we find patterns indicating any relationship with ratings?
 
 ![](./assets/pairplot.jpg)
