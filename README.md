@@ -37,6 +37,8 @@ From the basic descriptive stats, we can conclude the following:
 * The average product price is 20 British pounds, while the most expensive item is north of 2K
 * Most products have about 9 product reviews and 1-2 customer questions
 * The average product rating is a mere 2 stars
+* In the data, there are 7309 product listings with new items sold and 161 used
+
 
 * Price concentration in Amazon product sample
 ![](./assets/price_concentrate.jpg)
