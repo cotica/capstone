@@ -21,7 +21,7 @@ Some questions to be studied:
 * Does sentiment correspond to a product's star rating?
 
 - - -
-## Data sources and  acquisition
+## Data sources and acquisition
 
 ![](http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG)
 
@@ -51,7 +51,7 @@ From the basic descriptive stats, we can conclude the following:
 * Distribution of product reviews
 ![](./assets/concentration_reviews.jpg)
 
-* Top rated product categories
+* Top rated product categories ![](./assets/racecar.png)
 
 ![](./assets/top_rated_cats.png)
 
