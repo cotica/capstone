@@ -43,6 +43,10 @@ From the basic descriptive stats, we can conclude the following:
 * Price concentration in Amazon product sample
 ![](./assets/price_concentrate.jpg)
 
+* Priciest manufacturers (games and toys)
+
+![](./assets/top_manuf_by_price.jpg)
+
 * Distribution of product reviews
 ![](./assets/concentration_reviews.jpg)
 
