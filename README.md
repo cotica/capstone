@@ -32,6 +32,11 @@ Some questions to be studied:
 - - -
 ## Analysis & key findings
 
+### Tooling
+
+The `CountVectorizer` library is used to vectorize text and `Vader` for sentiment analysis.
+
+
 From the basic descriptive stats, we can conclude the following:
 
 * The average product price is 20 British pounds, while the most expensive item is north of 2K
@@ -70,14 +75,29 @@ From the basic descriptive stats, we can conclude the following:
 - - -
 ## ML
 
-### Tooling
+Since our target, average ratings, is continous and known, we will use supervised regression modeling. We will try out Random Forest Regressor and a regularized linear model.
 
-The `CountVectorizer` library is used to vectorize text and `Vader` for sentiment analysis.
+For our features set, we are using sentiment, our text, our categorized columns and all the numeric inputs including price.
 
+Our hypothesis is that text may be a fairly weak predictor of the rating. However, we are hoping to come across some speficic negative and non-neutral words that can help us explain some of the lower side of the ratings.
+
+We should also remember that not every product that's rated may necessarily come with a written review. Lastly, some products may not have any rating.
 
 ### Model evaluation
 
+Given that we are dealing with some 0's or near 0's, some metrics will not work as well as others (as an example, mean absolute percentage error).
 
+The models were thus evaluated on following available regression metrics:
+
+`r2_score`
+`mean_absolute_error`
+`mean_squared_error`
+`mean_absolute_error`
+`mean_absolute_percentage_error`
+`explained_variance_score`
+`max_error`
+
+The ____ model performed the best, using the above metrics.
 
 - - - 
 
