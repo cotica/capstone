@@ -1,4 +1,4 @@
-# Amazon product popularity predictor
+# Amazon product ratings predictor
 
 - - - 
 
