@@ -89,13 +89,13 @@ Given that we are dealing with some 0's or near 0's, some metrics will not work 
 
 The models were thus evaluated on following available regression metrics:
 
-`r2_score`
-`mean_absolute_error`
-`mean_squared_error`
-`mean_absolute_error`
-`mean_absolute_percentage_error`
-`explained_variance_score`
-`max_error`
+* `r2_score`
+* `mean_absolute_error`
+* `mean_squared_error`
+* `mean_absolute_error`
+* `mean_absolute_percentage_error`
+* `explained_variance_score`
+* `max_error`
 
 The ____ model performed the best, using the above metrics.
 
