@@ -97,6 +97,24 @@ The models were thus evaluated on following available regression metrics:
 * `explained_variance_score`
 * `max_error`
 
+Here are the results of evaluating each of our models.
+
+1. Random Forest
+
+* The R squared using the Random Forest model on our data is 0.0215 (where proximity to 1 is ideal).
+* The explained variance score, using the Random Forest model is 0.0228 (where proximity to 1 is ideal).
+* The max error on the Random Forest model is 4.9 (where proximity to 0 is ideal).
+* The Root Mean Squared Error on our Random Forest model is 4.6293.
+* The Mean Absolute Error on our Random Forest model is 1.99 stars.
+
+
+
+2. Regularized linear regression
+
+* 
+____
+
+
 The ____ model performed the best, using the above metrics.
 
 - - - 
