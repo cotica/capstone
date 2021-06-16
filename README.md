@@ -80,6 +80,16 @@ From the basic descriptive stats, we can conclude the following:
 ![](./assets/sentiment.jpg)
 
 - - -
+## NLP
+
+Top bi-grams and tri-grams reveal promising signals about top concerns and frequently recurrent issues that come up in reviews.
+Some of these include:
+
+* year old
+* quality
+* parts
+
+- - -
 ## ML
 
 Since our target, average ratings, is continous and known, we will use supervised regression modeling. We will try out Random Forest Regressor and a regularized linear model.
