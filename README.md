@@ -28,6 +28,13 @@ Some questions to be studied:
 
 * Generic product catalog data obtained from [data.world](https://data.world/promptcloud/fashion-products-on-amazon-com).
 
+- - -
+
+## Cleaning steps
+
+Nulls were imputed.
+Text was cleaned of strings including dates.
+
 
 - - -
 ## Analysis & key findings
