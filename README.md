@@ -156,7 +156,7 @@ The ____ model performed the best, using the above metrics and is recommended fo
 
 We approached a data set with the apptempt to use text data to predict star ratings of an Amazon product.
 
-In doing so, we ran into a few challenges with dimensionality. In addition, if we consider the complexity of the problem we've set out to solve, instinctively, predicting an exact numeric average for a product, down to decimal points, is exceedingly hard. In the future, we may try to re-frame the problem as a classification problem and attempt this exercise again on more vague and perhaps subjective targets, such as classifying a score as either "poor" (if it is below 3 out of 5 stars), "good or better" (if it's 4 starts or above) or "neutral".
+In doing so, we ran into a few challenges with dimensionality. In addition, if we consider the complexity of the problem we've set out to solve, instinctively, predicting an exact numeric average for a product, down to decimal points, is exceedingly hard. In the future, we may try to re-frame the problem as a classification problem and attempt this exercise again on more vague and perhaps subjective targets, such as classifying a score as either "poor" (if it is below 3 out of 5 stars), "good or better" (if it's 4 stars or above) or "neutral".
 
 In terms of data, we should mention a bit about potential bias as well. Because the sample was obtained from someone else's scaping results, we are a bit removed from the original source and cannot vouch for 100% accuracy of the data or the extraction methods.
 
