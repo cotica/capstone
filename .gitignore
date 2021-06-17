@@ -1,8 +1,7 @@
 ##### Custom - thanks Riley Robertson for template#####
 
 # local repo file storage
-git_ignore/
-#data/ #add this back afterward
+data/
 
 
 
