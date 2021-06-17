@@ -67,15 +67,11 @@ From the basic descriptive stats, we can conclude the following:
 
 ![](./assets/top_rated_cats.png)
 
-* The holy grail: can we find patterns indicating any relationship with ratings?
-
-![](./assets/pairplot.jpg)
-
-* The correlations aren't very strong though, in the end:
+* The holy grail: can we find patterns indicating any relationship with ratings? The correlations aren't very strong though, in the end:
 
 ![](./assets/Corr.jpg)
 
-* We _finally_ confirm a pretty good linear relationship pattern between reviews and ratings -- our holy grail!
+* With sentiment analysis, we are able to _finally_ confirm a decent, promising linear relationship pattern between reviews and ratings -- our holy grail!
 
 ![](./assets/sentiment.jpg)
 
@@ -123,30 +119,36 @@ Here are the results of evaluating each of our models.
 
 1. Random Forest
 
-* The R squared using the Random Forest model on our data is 0.0215 (where proximity to 1 is ideal).
+* The R squared using the Random Forest model on our test data is 0.0215 (where proximity to 1 is ideal).
 * The explained variance score, using the Random Forest model is 0.0228 (where proximity to 1 is ideal).
 * The max error on the Random Forest model is 4.9 (where proximity to 0 is ideal).
-* The Root Mean Squared Error on our Random Forest model is 4.6293.
-* The Mean Absolute Error on our Random Forest model is 1.99 stars.
+* The Root Mean Squared Error on our Random Forest model is 4.6293 (we want as close as possible to 0).
+* The Mean Absolute Error on our Random Forest model is 1.99 stars, which is the swing we can expect in terms of attempting to generalize our model to unseen data.
 
 
 
 2. Regularized linear regression
 
-* ___
+* The best R-squared here was 0.0965 for training and  0.0570 for our test data.
 
 
-3. Gradient regressor
 
-* ____
+3. Gradient booster regressor
+
+* The best R-squared here was 0.1665 for training and 0.0588 for our test data.
+
+
 
 4. SVM regressor
 
-* ____
+* The best R-squared here was 0.2482 for training and -0.1176 for our test data.
 
 
 
-The ____ model performed the best, using the above metrics and is recommended for production.
+The Gradient Boost Regressor model performed the best on the test score, using the above metrics and is recommended for production, if we had to choose one.
+
+
+_insert feature importances for best model_
 
 - - - 
 
