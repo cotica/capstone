@@ -4,9 +4,9 @@
 
 ## Problem space and questions
 
-We use a sample from the Amazon product catalog to understand the relationship between various factors and their impact on product ratings.
+Suppose that an Amazon executive wants to understand how a certain product or even its greater category are likely to be rated, such that the team can focus on appropriate strategies around poorly performing products (such as decisions around retaining certain sellers, among others). The exec wants to understand whether the way that certain products are described and language used in both reviews and customer questions has any bearing or correlation with the ubiquitous product star rating.
 
-Generally, we seek to understand whether there is a correlation between product quality, as assessed by ratings and reviews, and the product popularity.
+We are going to use a sample from the Amazon product catalog to understand the existence of any relationship between various product facets (such as price) and their impact on product ratings. Generally, we seek to understand whether there is a correlation between perceived product quality, based on the various facets, and the product's performance in terms of customer assessment (using ratings and reviews).
 
 Some questions to be studied:
 
@@ -33,7 +33,7 @@ Some questions to be studied:
 ## Cleaning steps
 
 Nulls were imputed.
-Text was cleaned of strings including dates.
+Text was cleaned of strings including dates, using string methods.
 
 
 - - -
@@ -92,7 +92,12 @@ Some of these include:
 - - -
 ## ML
 
-Since our target, average ratings, is continous and known, we will use supervised regression modeling. We will try out Random Forest Regressor and a regularized linear model.
+Since our target, average ratings, is continous and known, we will use supervised regression modeling. We will try out the following:
+
+* A Random Forest Regressor
+* A regularized linear model
+* A gradient boost regressor
+* Support vector machine regressor
 
 For our features set, we are using sentiment, our text, our categorized columns and all the numeric inputs including price.
 
@@ -128,17 +133,28 @@ Here are the results of evaluating each of our models.
 
 2. Regularized linear regression
 
-* 
-____
+* ___
 
 
-The ____ model performed the best, using the above metrics.
+3. Gradient regressor
+
+* ____
+
+4. SVM regressor
+
+* ____
+
+
+
+The ____ model performed the best, using the above metrics and is recommended for production.
 
 - - - 
 
 ## Conclusions and recommendations
 
 ### Caveats, assumptions made and questions along the way
+
+We approached a data set with the apptempt to use text data to predict star ratings of an Amazon product. In doing so, we ran into a few challenges with dimensionality. In the future, we may try to re-frame the problem as a classification problem and attempt this exercise again.
 
 Because the sample was obtained from someone else's scaping results, we are a bit removed from the original source and cannot vouch for 100% accuracy of the data or the extraction methods.
 
