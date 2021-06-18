@@ -88,7 +88,7 @@ Some of these include:
 - - -
 ## ML
 
-Since our target, average ratings, is continous and known, we will use supervised regression modeling. We will try out the following:
+Since our target, average ratings, is continous and known, we will use supervised regression modeling. We tried out the following:
 
 * A Random Forest Regressor
 * A regularized linear model
@@ -119,11 +119,16 @@ Here are the results of evaluating each of our models.
 
 1. Random Forest
 
-* The R squared using the Random Forest model on our test data is 0.0215 (where proximity to 1 is ideal).
-* The explained variance score, using the Random Forest model is 0.0228 (where proximity to 1 is ideal).
-* The max error on the Random Forest model is 4.9 (where proximity to 0 is ideal).
-* The Root Mean Squared Error on our Random Forest model is 4.6293 (we want as close as possible to 0).
-* The Mean Absolute Error on our Random Forest model is 1.99 stars, which is the swing we can expect in terms of attempting to generalize our model to unseen data.
+* The R squared using the Random Forest model on our train data is 0.424 and on our test data is 1.0. (where proximity to 1 is ideal).
+* The explained variance score, using the Random Forest model is 0.437 (where proximity to 1 is ideal).
+* The max error on the Random Forest model is 1.95 stars (where proximity to 0 is ideal).
+* The Root Mean Squared Error on our Random Forest model is 0.7289 (we want as close as possible to 0).
+* The Mean Absolute Error on our Random Forest model is 0.69 stars, which is the swing we can expect in terms of attempting to generalize our model to unseen data.
+
+
+The feature importances were as follows:
+
+_________
 
 
 
