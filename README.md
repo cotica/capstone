@@ -133,19 +133,13 @@ _________
 
 
 
-2. Regularized linear regression
-
-* Performed awfully and will be scratched
-
-
-
-3. Gradient booster regressor
+2. Gradient booster regressor
 
 * The best R-squared here was 0.5282 for training and 0.5025 for our test data.
 
 
 
-4. SVM regressor
+3. SVM regressor
 
 * The best R-squared here was 0.2482 for training and -0.1176 for our test data.
 
@@ -184,6 +178,8 @@ Lastly, a word of caution must be noted on ratings overall. While the subject of
 [`Data import, cleaning + EDA report`](./code/Amazon-product-catalog-cleaning-EDA.ipynb)
 
 [`NLP + modeling report`](./code/Amazon-product-catalog-NLP-modeling.ipynb)
+
+[`Recording`](https://drive.google.com/file/d/1gvHzDyGZtmbOvvEEFTXJbgvWqMyXfvIg/view?usp=drivesdk)
 
 - - -
 ## References and contributors
