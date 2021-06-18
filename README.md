@@ -141,11 +141,11 @@ _________
 
 3. SVM regressor
 
-* The best R-squared here was 0.2482 for training and -0.1176 for our test data. This was only tested on a subset of the features.
+* The best R-squared here was 0.8666 for training and 0.0543 for our test data.
 
 
 
-The Random Forest Regressor model performed the best on the test score, using the above metrics and is recommended for production, if we had to choose one.
+The SVM regressor model performed the most poorly of the three, while Gradient Booster performed the most reliably, accounting for performance across both test and train. However, our Random Forest did the best, using the above metrics and is recommended for production, if we had to choose one.
 
 
 
