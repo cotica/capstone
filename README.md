@@ -84,6 +84,7 @@ Some of these include:
 * year old
 * quality
 * parts
+* _and many more
 
 - - -
 ## ML
@@ -119,7 +120,7 @@ Here are the results of evaluating each of our models.
 
 1. Random Forest
 
-* The R squared using the Random Forest model on our train data is 0.424 and on our test data is 1.0. (where proximity to 1 is ideal).
+* The R squared using the Random Forest model on our train data is 0.424 and on our test data is 1.0. (where proximity to 1 is ideal). _Concerns with leakage somewhere._
 * The explained variance score, using the Random Forest model is 0.437 (where proximity to 1 is ideal).
 * The max error on the Random Forest model is 1.95 stars (where proximity to 0 is ideal).
 * The Root Mean Squared Error on our Random Forest model is 0.7289 (we want as close as possible to 0).
@@ -134,13 +135,13 @@ _________
 
 2. Regularized linear regression
 
-* The best R-squared here was 0.0965 for training and  0.0570 for our test data.
+* Performed awfully and will be scratched
 
 
 
 3. Gradient booster regressor
 
-* The best R-squared here was 0.1665 for training and 0.0588 for our test data.
+* The best R-squared here was 0.5282 for training and 0.5025 for our test data.
 
 
 
