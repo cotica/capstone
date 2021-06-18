@@ -126,7 +126,7 @@ Here are the results of evaluating each of our models.
 * The Mean Absolute Error on our Random Forest model is 0.69 stars, which is the swing we can expect in terms of attempting to generalize our model to unseen data.
 
 
-The feature importances were as follows:
+As for feature importances, the story here is that we have just such an overwhelming number of features that each individual feature -- with the exception of the number of reviews -- seems to get lost individually.
 
 _________
 
