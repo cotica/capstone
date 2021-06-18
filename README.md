@@ -30,10 +30,11 @@ Some questions to be studied:
 
 - - -
 
-## Cleaning steps
+## Cleaning, data wrangling and data engineering steps
 
-Nulls were imputed.
-Text was cleaned of strings including dates, using string methods.
+Nulls were imputed and 0's in the target addressed.
+Text was cleaned of strings including punctuation and dates, using string methods and price data parsed out of dictionaries.
+Categorical data were encoded (dummified) for model input.
 
 
 - - -
@@ -43,12 +44,13 @@ Text was cleaned of strings including dates, using string methods.
 
 The `CountVectorizer` library is used to vectorize text and `Vader` for sentiment analysis.
 
+### Observations and insights
 
 From the basic descriptive stats, we can conclude the following:
 
-* The average product price is 20 British pounds, while the most expensive item is north of 2K
-* Most products have about 9 product reviews and 1-2 customer questions
-* The average product rating is a mere 2 stars
+* The average product price is 20 British pounds, while the most expensive item is north of 2K BP
+* On average, a product listing has about 9 product reviews and 1-2 customer questions; yet many (50%-80%!) have no reviews or ratings at all, and customer questions are sparse.
+* The average product rating is a mere 2 stars (*before handling 0's in the data)
 * In the data, there are 7309 product listings with new items sold and 161 used
 * There were 256 subcategories and 2646 manufacturers represented
 
@@ -67,7 +69,7 @@ From the basic descriptive stats, we can conclude the following:
 
 ![](./assets/top_rated_cats.png)
 
-* The holy grail: can we find patterns indicating any relationship with ratings? The correlations aren't very strong though, in the end:
+* Trying to solve the holy grail: can we find patterns indicating any relationship with ratings? The correlations aren't very strong though, in the end:
 
 ![](./assets/Corr.jpg)
 
@@ -89,7 +91,7 @@ Some of these include:
 - - -
 ## ML
 
-Since our target, average ratings, is continous and known, we will use supervised regression modeling. We tried out the following:
+Since our target, average ratings, is continuous and known, we will use supervised regression modeling. We tried out the following:
 
 * A Random Forest Regressor
 * A regularized linear model
@@ -104,7 +106,7 @@ We should also remember that not every product that's rated may necessarily come
 
 ### Model evaluation
 
-Given that we are dealing with some 0's or near 0's, some metrics will not work as well as others (as an example, mean absolute percentage error).
+Given that we were initially dealing with some 0's or near 0's in the target (eventually addressed with imputation-like strategy), some metrics might not have worked as well as others (as an example, mean absolute percentage error was yielding infinites and was taken out of consideration).
 
 The models were thus evaluated on following available regression metrics:
 
@@ -127,7 +129,7 @@ Here are the results of evaluating each of our models.
 * The Mean Absolute Error on our Random Forest model is 0.69 stars, which is the swing we can expect in terms of attempting to generalize our model to unseen data.
 
 
-As for feature importances, the story here is that we have just such an overwhelming number of features that each individual feature -- with the exception of the number of reviews -- seems to get lost individually.
+As for feature importances, the story here is that we have just such an overwhelming number of features that each individual feature -- with the exception of the *number of reviews*, which turned out the most heavily weighted feature -- seems to get lost individually.
 
 _________
 
@@ -135,7 +137,7 @@ _________
 
 2. Gradient booster regressor
 
-* The best R-squared here was 0.5282 for training and 0.5025 for our test data.
+* The best R-squared here was 0.5282 for training and 0.5025 for our test data. This is decent!
 
 
 
@@ -145,7 +147,7 @@ _________
 
 
 
-The SVM regressor model performed the most poorly of the three, while Gradient Booster performed the most reliably, accounting for performance across both test and train. However, our Random Forest did the best, using the above metrics and is recommended for production, if we had to choose one.
+The SVM regressor model performed the most poorly of the three, while Gradient Booster performed the most reliably, accounting for performance across both test and train. However, our Random Forest did the best on test, using the above metrics and is recommended for production, if we had to choose one.
 
 
 
@@ -155,7 +157,7 @@ The SVM regressor model performed the most poorly of the three, while Gradient B
 
 ### Caveats, assumptions made and questions along the way
 
-We approached a data set with the apptempt to use text data to predict star ratings of an Amazon product.
+We approached a data set with the attempt to use text data to predict star ratings of an Amazon product.
 
 In doing so, we ran into a few challenges with dimensionality. In addition, if we consider the complexity of the problem we've set out to solve, instinctively, predicting an exact numeric average for a product, down to decimal points, is exceedingly hard. In the future, we may try to re-frame the problem as a classification problem and attempt this exercise again on more vague and perhaps subjective targets, such as classifying a score as either "poor" (if it is below 3 out of 5 stars), "good or better" (if it's 4 stars or above) or "neutral".
 
